@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Tejaswini Kosunam">
+  <title>Video chat Application</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="js/lib/socketcluster.js"></script>
+  <script src="js/lib/adapter.js"></script>
+  <script src="js/lib/anchorme.min.js"></script>
+  <script src="js/lib/hark.bundle.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="head">
+      <button class="btn" id="capture-screen">
+        <i class="fa fa-desktop" aria-hidden="true"> ScreenShare</i>
+      </button>
+    </div>
+    <div class="screenShare">
+      <video id="screenshareVideo" controls autoplay playsInline></video>
+    </div>
+    <div id="webcamDiv">
+    </div>
+    <div class="container">
+      <div class="fileUploader">
+        <input type="file" id="fileUpload" name="files" />
+        <button id="sendfile">SendFile</button>
+        <progress id="progressbar" max="0" value="0"></progress>
+      </div>
+      <div class="messages">
+        <ul id="messages-list"></ul>
+      </div>
+      <div class="actions">
+        <form id="form">
+          <input id="message" autocomplete="off" placeholder="Type a message...">
+          <button id="Submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+  <script>
+  </script>
+</body>
+
+</html>
